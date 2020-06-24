@@ -1,0 +1,68 @@
+<!--templates/home.html-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+  <title>Django Highcharts Example</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-dark indigo navbar-expand-md bg-faded justify-content-center">
+        <a href="{% url 'home' %}" class="navbar-brand d-flex w-50 mr-auto">KIM NA YEON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-center">
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="container" style="margin-top: 20px;"></div>
+</div>
+
+
+
+
+<div class="container">
+
+  <ul>
+    <button><a href="{% url 'covid19_country' %}">[Covid-19] 합계</a></button> <br><br>
+    <button><a href="{% url 'covid19_recover' %}">[Covid-19] 회복자</a></button> <br><br>
+    <button><a href="{% url 'covid19_death' %}">[Covid-19] 사망자</a></button> <br><br>
+    <button><a href="{% url 'covid19_korea' %}">[Covid-19] 확진자</a></button> <br><br>
+
+    <button><a href="{% url 'ticket_class_view_2' %}">Titanic Chart</a></button>
+
+  </ul>
+
+  </div>
+    <div id="container2" style="margin-top: 20px;"></div>
+<div class="container">
+ <footer class="page-footer font-small indigo">
+      <div class="footer-copyright text-center py-3">e-mail :
+        <a>♡kny9904@naver.com♡</a>
+      </div>
+</footer>
+</div>
+
+</body>
+</html>
